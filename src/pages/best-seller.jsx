@@ -26,12 +26,12 @@ export default function BestSeller() {
         }}
       >
         <img
-          src="https://www.mysticmonkcoffee.com/cdn/shop/articles/americano_coffee_1024x.png?v=1706611607"
+          src="https://img.freepik.com/premium-photo/hot-coffee-capuccino-cup-with-latte-art-wood-table-cafe_778722-18.jpg"
           alt=""
           className="h-[300px] w-[300px] border-[8px] border-orange-200"
         />
         <h1 className="text-4xl font-semibold font-serif text-center">
-          Americano
+          Capuccino
         </h1>
         <button className="text-center text-2xl font-serif border-t-2 border-black py-4">
           Order Now
@@ -44,12 +44,12 @@ export default function BestSeller() {
         }}
       >
         <img
-          src="https://www.mysticmonkcoffee.com/cdn/shop/articles/americano_coffee_1024x.png?v=1706611607"
+          src="https://img.pikbest.com/origin/10/21/52/44IpIkbEsTd8a.jpg!w700wp"
           alt=""
           className="h-[300px] w-[300px] border-[8px] border-orange-200"
         />
         <h1 className="text-4xl font-semibold font-serif text-center">
-          Americano
+          Espresso
         </h1>
         <button className="text-center text-2xl font-serif border-t-2 border-black py-4">
           Order Now
