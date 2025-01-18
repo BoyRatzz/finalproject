@@ -1,6 +1,7 @@
-import BestSeller from "./pages/best-seller";
-import Footer from "./pages/footer";
-import NavBar from "./pages/nav-bar";
+import BestSeller from "./homepage/best-seller";
+import Footer from "./homepage/footer";
+import NavBar from "./homepage/nav-bar";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
             </div>
             <div className="flex gap-6 py-10 text-xl font-serif">
               <button className="bg-white py-3 px-6 border-[2px] border-black text-black">
-                Order Now →
+                <Link to={"/menu"}>Order Now →</Link>
               </button>
               <button className="px-6 py-3 border-[2px] border-white text-white">
                 Explore More
@@ -45,8 +46,8 @@ function App() {
 
           <div className="flex flex-1 bg-[#201404] justify-center items-center">
             <img
-              src="Kape bg 2.png"
-              alt=""
+              src="/src/assets/images/Kape bg 2.png"
+              alt="img"
               className="translate-y-16 drop-shadow-2xl translate-x-12"
             />
           </div>
@@ -58,7 +59,11 @@ function App() {
           <div className="flex max-w-[1280px] w-full">
             <div className="flex flex-1 justify-center items-center">
               <div className="w-[800px] -ml-28">
-                <img src="Milk 1.png" alt="" className="-rotate-12" />
+                <img
+                  src="/src/assets/images/Milk 1.png"
+                  alt="img"
+                  className="-rotate-12"
+                />
               </div>
             </div>
             <div className="flex flex-col flex-1 py-[200px]">
@@ -73,7 +78,7 @@ function App() {
               </p>
               <div className="flex justify-start py-10">
                 <button className=" text-lg font-serif px-6 py-3 bg-black text-white">
-                  View All →
+                  <Link to={"/menu"}>View All →</Link>
                 </button>
               </div>
             </div>
@@ -96,13 +101,17 @@ function App() {
             </p>
             <div className="flex justify-start py-10">
               <button className=" text-lg font-serif px-6 py-3 bg-black text-white">
-                View All →
+                <Link to={"/menu"}>View All →</Link>
               </button>
             </div>
           </div>
           <div className="flex flex-1 justify-center items-center">
             <div className="w-[870px] -ml-28 justify-center items-center">
-              <img src="Milk 2.png" alt="" className="rotate-12" />
+              <img
+                src="/src/assets/images/Milk 2.png"
+                alt="img"
+                className="rotate-12"
+              />
             </div>
           </div>
         </div>
@@ -137,8 +146,8 @@ function App() {
           </h1>
           <div className="flex flex-col items-center w-[1000px] pb-20">
             <img
-              src="User.png"
-              alt=""
+              src="/src/assets/images/User.png"
+              alt="img"
               className="rounded-full w-[200px] border-8 border-orange-400 translate-y-16"
             />
             <div className="bg-black px-20 pt-20 text-white text-center w-[1000px]">
@@ -187,7 +196,7 @@ function App() {
       </section>
 
       <section className="flex justify-center w-screen">
-        <div className="flex max-w-[1280px] w-full h-[500px] text-white border-b border-b-orange-200">
+        <div className="flex max-w-[1280px] w-full h-[500px] text-white">
           <div className="flex flex-col flex-1 border-l-orange-200 border-l">
             <img
               src="https://img.pikbest.com/origin/09/30/60/32ppIkbEsTjQx.png!sw800"
@@ -197,7 +206,7 @@ function App() {
               Enjoy Better and Better
             </h1>
             <h1 className="font-serif text-3xl text-center">
-              Coffee With Caffeine.
+              Coffee With Caffeena.
             </h1>
           </div>
           <div className="flex flex-1 flex-col gap-10 justify-center pl-5 border-x-orange-200 border-x">
@@ -221,22 +230,22 @@ function App() {
             <div className="flex gap-10">
               <button>
                 <img
-                  src="facebook logo final.png"
-                  alt=""
+                  src="/src/assets/images/facebook logo final.png"
+                  alt="img"
                   className="w-[50px] h-[50px]"
                 />
               </button>
               <button>
                 <img
-                  src="instagram logo.png"
-                  alt=""
+                  src="/src/assets/images/instagram logo.png"
+                  alt="img"
                   className="w-[50px] h-[50px]"
                 />
               </button>
               <button>
                 <img
-                  src="twitter X logo.png"
-                  alt=""
+                  src="/src/assets/images/twitter X logo.png"
+                  alt="img"
                   className="w-[50px] h-[50px]"
                 />
               </button>
@@ -245,7 +254,9 @@ function App() {
         </div>
       </section>
 
-      <Footer />
+      <div className="border-t border-orange-200">
+        <Footer />
+      </div>
     </main>
   );
 }
